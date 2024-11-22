@@ -4,7 +4,7 @@ open weather app using requests
 """
 import requests
 
-api_weather_key = 'f5d6edc003514f46ca744aba91ebc106'
+api_weather_key = ''
 api_weather_url = 'http://api.openweathermap.org/data/2.5/find'
 
 
