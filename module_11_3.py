@@ -4,7 +4,7 @@ class Introspection:
 
     def __init__(self, any_object):
         self.type = type(any_object)
-        # self.attrs = getattr(any_object, 'inspect')
+        self.help = help(any_object)
         self.methods = dir(any_object)
         self.modules = sys.modules
         self.path = sys.path
@@ -13,7 +13,7 @@ class Introspection:
 
     def introspection_info(self):
         pprint(self.type)
-        # pprint(self.attrs)
+        pprint(self.help)
         pprint(self.methods)
         pprint(self.modules)
         pprint(self.path)
